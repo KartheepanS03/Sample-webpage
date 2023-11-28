@@ -1,1 +1,1 @@
-# Static-webpage
+# Sample-webpage and Registeration page
