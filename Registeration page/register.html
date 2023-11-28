@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>registration form</title>
+    <script>
+        function validateform() {
+            var Email = document.registerform.Email.value;
+            var password = document.getElementById("Password").value;
+            var emailcheck = /^[a-zA-Z0-9_.]+@[a-zA-Z0-9.]*$/
+            var Name = document.registerform.fname.value;
+
+            if (Name == "") {
+                alert("Name field must be filled out")
+                return false;
+            }
+
+            if (Email == "") {
+                alert("EMAIL field must be filled out")
+                return false;
+            }
+
+            if (!Email.match(emailcheck)) {
+                alert("Enter the valid email address")
+                return false;
+            }
+
+            if (password == "") {
+                alert("PASSWORD field must be filled out")
+                return false;
+            } else if (password.length < 6) {
+                alert("Password should be at least 6 characters");
+                return false;
+            }
+            
+            alert("Completed successfully!");
+            return true;
+           
+        }
+    </script>
+    <style>
+        body {
+            background-color:powderblue;
+            text-align: center;
+        }
+
+        .d {
+            color:#090808;
+            font-family: cursive;
+            font-weight:bold;
+        }
+    </style>
+    </head>
+    <body >
+        <p style="text-align: center; color: brown; font-size: 50px;">Student Registration Form</p>
+        <hr>
+
+        <form onsubmit="return validateform()" name="registerform">
+            <div class="d">
+            <label><b>Name:</b></label>
+            <input type="text" name="fname"><br><br>
+
+            <label><b>Gender:</b></label><br>
+            <input type="radio" id="Male" name="Gender"/>Male
+            <input type="radio" id="Female" name="Gender"/>Female<br><br>
+
+            <label><b>Phone No:</b></label>
+            <input type="text" name="Phone No" size="10"/><br><br>
+
+            <label><b>Email:</b></label>
+            <input type="email" id="email" name="Email"/><br><br>
+            
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="Password" name="password"/><br><br>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
