@@ -1,0 +1,74 @@
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    
+    color: black;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .bg{
+    background-image: url('teen.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  main {
+    background-image: url('teen.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .testimonial {
+    text-align: center;
+  }
+  
+  .quote {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .foot {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: max-content;
+  }
+  
